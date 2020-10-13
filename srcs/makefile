@@ -1,12 +1,12 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
+#    makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: rkochhan <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: rkochhan <rkochhan@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/01/21 15:08:38 by rkochhan          #+#    #+#              #
-#    Updated: 2020/02/06 15:13:22 by rkochhan         ###   ########.fr        #
+#    Updated: 2020/10/13 11:00:18 by rkochhan         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,6 +20,7 @@ SRC		=  ft_atoi.c \
 			ft_isascii.c \
 			ft_isdigit.c \
 			ft_isprint.c \
+			ft_isspace.c \
 			ft_itoa.c \
 			ft_memccpy.c \
 			ft_memchr.c \
@@ -27,6 +28,10 @@ SRC		=  ft_atoi.c \
 			ft_memcpy.c \
 			ft_memmove.c \
 			ft_memset.c \
+			ft_putchar.c \
+			ft_putendl.c \
+			ft_putnbr.c \
+			ft_putnbr.c \
 			ft_putchar_fd.c \
 			ft_putendl_fd.c \
 			ft_putnbr_fd.c \

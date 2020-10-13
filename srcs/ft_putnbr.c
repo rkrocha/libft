@@ -1,34 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rkochhan <rkochhan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/20 15:39:25 by rkochhan          #+#    #+#             */
-/*   Updated: 2020/10/13 10:49:46 by rkochhan         ###   ########.fr       */
+/*   Created: 2020/01/24 13:27:11 by rkochhan          #+#    #+#             */
+/*   Updated: 2020/10/13 10:58:59 by rkochhan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int			ft_atoi(const char *str)
+void	ft_putnbr(int n)
 {
-	unsigned long long	num;
-	int					sign;
+	long num;
 
-	num = 0;
-	sign = 1;
-	while (ft_isspace(*str) == 1)
-		str++;
-	if (*str == '-')
-		sign = -1;
-	if (*str == '-' || *str == '+')
-		str++;
-	while (*str >= '0' && *str <= '9')
+	num = n;
+	if (n < 0)
 	{
-		num = num * 10 + (*str - '0');
-		str++;
+		ft_putchar('-');
+		num *= -1;
 	}
-	return ((int)(num * sign));
+	if (num > 10)
+		ft_putnbr(num / 10);
+	ft_putchar(num % 10 + 48);
 }
