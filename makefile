@@ -20,7 +20,6 @@ SRC		=  ft_atoi.c \
 			ft_isascii.c \
 			ft_isdigit.c \
 			ft_isprint.c \
-			ft_isspace.c \
 			ft_itoa.c \
 			ft_memccpy.c \
 			ft_memchr.c \
@@ -28,10 +27,6 @@ SRC		=  ft_atoi.c \
 			ft_memcpy.c \
 			ft_memmove.c \
 			ft_memset.c \
-			ft_putchar.c \
-			ft_putendl.c \
-			ft_putnbr.c \
-			ft_putstr.c \
 			ft_putchar_fd.c \
 			ft_putendl_fd.c \
 			ft_putnbr_fd.c \
@@ -61,29 +56,39 @@ BONUS	= ft_lstadd_back.c \
 			ft_lstmap.c	\
 			ft_lstnew.c \
 			ft_lstsize.c
+			
+OTHERS	= ft_isspace.c \
+			ft_putchar.c \
+			ft_putendl.c \
+			ft_putnbr.c \
+			ft_putstr.c
 
 OBJ		= $(SRC:.c=.o)
 
 BOBJ	= $(BONUS:.c=.o)
 
+OOBJ	= $(OTHERS:.c=.o)
+
 all: $(NAME)
 
-$(NAME): $(SRC) libft.h
-	gcc -Wall -Werror -Wextra -I./ -c $(SRC)
-	ar rc $(NAME) $(OBJ)
-	ranlib $(NAME)
+$(NAME): 
+	@ gcc -Wall -Werror -Wextra -I./ -c $(SRC) $(BONUS) $(OTHERS)
+	@ ar rc $(NAME) $(OBJ) $(BOBJ) $(OOBJ)
+	@ ranlib $(NAME)
+	@ echo "Made $(value NAME)"
 
 clean:
-	rm -f $(OBJ) $(BOBJ)
+	@ rm -f $(OBJ) $(BOBJ) $(OOBJ)
 
 fclean: clean
-	rm -f $(NAME)
+	@ rm -f $(NAME)
 
 re: fclean all
 
-bonus: $(BOBJ)
-	gcc -Wall -Werror -Wextra -I./ -c $(SRC) $(BONUS)
-	ar rc $(NAME) $(OBJS) $(BOBJ)
-	ranlib $(NAME)
+bonus:
+	@ gcc -Wall -Werror -Wextra -I./ -c $(SRC) $(BONUS)
+	@ ar rc $(NAME) $(OBJ) $(BOBJ)
+	@ ranlib $(NAME)
+	@ echo "Made $(value NAME)"
 
 .PHONY: all clean fclean re bonus
