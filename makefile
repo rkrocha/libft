@@ -6,7 +6,7 @@
 #    By: rkochhan <rkochhan@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/01/21 15:08:38 by rkochhan          #+#    #+#              #
-#    Updated: 2020/10/13 11:00:18 by rkochhan         ###   ########.fr        #
+#    Updated: 2020/12/08 10:35:09 by rkochhan         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -56,7 +56,7 @@ BONUS	= ft_lstadd_back.c \
 			ft_lstmap.c	\
 			ft_lstnew.c \
 			ft_lstsize.c
-			
+
 OTHERS	= ft_isspace.c \
 			ft_putchar.c \
 			ft_putendl.c \
@@ -71,7 +71,7 @@ OOBJ	= $(OTHERS:.c=.o)
 
 all: $(NAME)
 
-$(NAME): 
+$(NAME): $(SRC) $(BONUS) $(OTHERS)
 	@ gcc -Wall -Werror -Wextra -I./ -c $(SRC) $(BONUS) $(OTHERS)
 	@ ar rc $(NAME) $(OBJ) $(BOBJ) $(OOBJ)
 	@ ranlib $(NAME)
@@ -85,10 +85,6 @@ fclean: clean
 
 re: fclean all
 
-bonus:
-	@ gcc -Wall -Werror -Wextra -I./ -c $(SRC) $(BONUS)
-	@ ar rc $(NAME) $(OBJ) $(BOBJ)
-	@ ranlib $(NAME)
-	@ echo "Made $(value NAME)"
+bonus: all
 
 .PHONY: all clean fclean re bonus
