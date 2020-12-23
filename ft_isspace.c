@@ -6,11 +6,11 @@
 /*   By: rkochhan <rkochhan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/13 10:48:51 by rkochhan          #+#    #+#             */
-/*   Updated: 2020/10/13 10:49:21 by rkochhan         ###   ########.fr       */
+/*   Updated: 2020/12/23 12:06:36 by rkochhan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isspace(char c)
+int	ft_isspace(int c)
 {
 	if (c == '\t' || c == '\n' || c == '\v' ||
 			c == '\f' || c == '\r' || c == ' ')
