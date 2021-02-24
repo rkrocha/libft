@@ -6,7 +6,7 @@
 /*   By: rkochhan <rkochhan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/20 15:52:33 by rkochhan          #+#    #+#             */
-/*   Updated: 2020/12/23 12:06:46 by rkochhan         ###   ########.fr       */
+/*   Updated: 2021/02/24 18:33:08 by rkochhan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 # include <stdlib.h>
 # include <string.h>
 # include <unistd.h>
-# include "ft_boolean.h"
 
 typedef struct	s_list
 {
