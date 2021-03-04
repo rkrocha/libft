@@ -61,7 +61,9 @@ OTHERS	= ft_isspace.c \
 			ft_putchar.c \
 			ft_putendl.c \
 			ft_putnbr.c \
-			ft_putstr.c
+			ft_putstr.c \
+			ft_strdel.c \
+			ft_strswap.c
 
 OBJ		= $(SRC:.c=.o)
 
@@ -69,13 +71,19 @@ BOBJ	= $(BONUS:.c=.o)
 
 OOBJ	= $(OTHERS:.c=.o)
 
-all: $(NAME)
+CC		= gcc
 
-$(NAME): $(SRC) $(BONUS) $(OTHERS)
-	@ gcc -Wall -Werror -Wextra -I./ -c $(SRC) $(BONUS) $(OTHERS)
+CFLAGS	= -Wall -Werror -Wextra
+
+.c.o:
+	$(CC) $(CFLAGS) -c $< -o $(<:.c=.o)
+
+$(NAME): $(OBJ) $(BOBJ) $(OOBJ)
 	@ ar rc $(NAME) $(OBJ) $(BOBJ) $(OOBJ)
 	@ ranlib $(NAME)
 	@ echo "Made $(value NAME)"
+
+all: $(NAME)
 
 clean:
 	@ rm -f $(OBJ) $(BOBJ) $(OOBJ)
