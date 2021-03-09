@@ -58,6 +58,7 @@ BONUS	= ft_lstadd_back.c \
 			ft_lstsize.c
 
 OTHERS	= ft_isspace.c \
+			ft_lintlen.c \
 			ft_putchar.c \
 			ft_putendl.c \
 			ft_putnbr.c \
