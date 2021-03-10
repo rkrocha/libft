@@ -62,6 +62,7 @@ OTHERS	= ft_isspace.c \
 			ft_putchar.c \
 			ft_putendl.c \
 			ft_putnbr.c \
+			ft_putlnbr.c \
 			ft_putstr.c \
 			ft_strdel.c \
 			ft_strswap.c

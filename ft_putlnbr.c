@@ -1,28 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   ft_putlnbr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rkochhan <rkochhan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/24 13:27:11 by rkochhan          #+#    #+#             */
-/*   Updated: 2021/03/10 10:48:54 by rkochhan         ###   ########.fr       */
+/*   Created: 2021/03/10 10:48:33 by rkochhan          #+#    #+#             */
+/*   Updated: 2021/03/10 10:50:54 by rkochhan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putnbr(int n)
+void		ft_putlnbr(long num)
 {
-	long num;
-
-	num = n;
-	if (n < 0)
+	if (num < 0)
 	{
 		ft_putchar('-');
 		num *= -1;
 	}
 	if (num >= 10)
-		ft_putnbr(num / 10);
+		ft_putlnbr(num / 10);
 	ft_putchar(num % 10 + 48);
 }

@@ -6,7 +6,7 @@
 /*   By: rkochhan <rkochhan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/20 15:52:33 by rkochhan          #+#    #+#             */
-/*   Updated: 2021/03/09 10:14:03 by rkochhan         ###   ########.fr       */
+/*   Updated: 2021/03/10 10:50:17 by rkochhan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,6 +52,7 @@ void			*ft_memmove(void *dst, const void *src, size_t len);
 void			*ft_memset(void *b, int c, size_t len);
 void			ft_putchar(char c);
 void			ft_putendl(char *s);
+void			ft_putlnbr(long num);
 void			ft_putnbr(int n);
 void			ft_putstr(char *s);
 void			ft_putchar_fd(char c, int fd);
