@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rkochhan <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: rkochhan <rkochhan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/24 13:27:11 by rkochhan          #+#    #+#             */
-/*   Updated: 2020/02/03 12:32:39 by rkochhan         ###   ########.fr       */
+/*   Updated: 2021/03/10 11:29:02 by rkochhan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putchar_fd('-', fd);
 		num *= -1;
 	}
-	if (num > 10)
+	if (num >= 10)
 		ft_putnbr_fd((num / 10), fd);
 	ft_putchar_fd((num % 10 + 48), fd);
 }
