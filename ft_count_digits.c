@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lintlen.c                                       :+:      :+:    :+:   */
+/*   ft_count_digits.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rkochhan <rkochhan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/09 09:53:43 by rkochhan          #+#    #+#             */
-/*   Updated: 2021/03/09 10:13:07 by rkochhan         ###   ########.fr       */
+/*   Updated: 2021/03/11 03:48:21 by rkochhan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_lintlen(long n)
+int	ft_count_digits(long n)
 {
 	unsigned long	num;
 	size_t			len;
