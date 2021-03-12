@@ -6,7 +6,7 @@
 /*   By: rkochhan <rkochhan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/20 15:52:33 by rkochhan          #+#    #+#             */
-/*   Updated: 2021/03/11 04:07:20 by rkochhan         ###   ########.fr       */
+/*   Updated: 2021/03/12 10:15:36 by rkochhan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,9 @@
 # include <stddef.h>
 # include <stdlib.h>
 # include <unistd.h>
+
+# define LOW_HEX_BASE "0123456789abcdef"
+# define UP_HEX_BASE "0123456789ABCDEF"
 
 typedef struct	s_list
 {
@@ -53,6 +56,7 @@ void			*ft_memset(void *b, int c, size_t len);
 void			ft_putchar(char c);
 void			ft_putendl(char *s);
 void			ft_putlnbr(long num);
+void			ft_putlnbr_base(long num, char *base, int radix);
 void			ft_putnbr(int n);
 void			ft_putstr(char *s);
 void			ft_putchar_fd(char c, int fd);

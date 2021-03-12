@@ -62,6 +62,7 @@ OTHERS	= ft_count_digits.c \
 			ft_putchar.c \
 			ft_putendl.c \
 			ft_putlnbr.c \
+			ft_putlnbr_base.c \
 			ft_putnbr.c \
 			ft_putnstr.c \
 			ft_putstr.c \
