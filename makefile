@@ -67,6 +67,7 @@ OTHERS	= ft_count_digits.c \
 			ft_putnstr.c \
 			ft_putstr.c \
 			ft_strdel.c \
+			ft_strsearch.c \
 			ft_strswap.c
 
 OBJ		= $(SRC:.c=.o)
