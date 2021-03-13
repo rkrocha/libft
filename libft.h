@@ -6,19 +6,23 @@
 /*   By: rkochhan <rkochhan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/20 15:52:33 by rkochhan          #+#    #+#             */
-/*   Updated: 2021/03/13 07:05:59 by rkochhan         ###   ########.fr       */
+/*   Updated: 2021/03/13 11:23:59 by rkochhan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
+# include <stdbool.h>
 # include <stddef.h>
 # include <stdlib.h>
 # include <unistd.h>
 
-# define LOW_HEX_BASE "0123456789abcdef"
-# define UP_HEX_BASE "0123456789ABCDEF"
+# define BIN_BASE "01"
+# define OCTAL_BASE "01234567"
+# define DECIMAL_BASE "0123456789"
+# define LOWER_HEX_BASE "0123456789abcdef"
+# define UPPER_HEX_BASE "0123456789ABCDEF"
 
 typedef struct	s_list
 {
@@ -83,5 +87,6 @@ char			*ft_strtrim(char const *s1, char const *set);
 char			*ft_substr(char const *s, unsigned int start, size_t len);
 int				ft_tolower(int c);
 int				ft_toupper(int c);
+char			*ft_ullitoa_base(unsigned long long num, char *base, bool sign);
 
 #endif
