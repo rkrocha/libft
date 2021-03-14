@@ -6,7 +6,7 @@
 /*   By: rkochhan <rkochhan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/20 15:52:33 by rkochhan          #+#    #+#             */
-/*   Updated: 2021/03/13 11:23:59 by rkochhan         ###   ########.fr       */
+/*   Updated: 2021/03/14 13:39:26 by rkochhan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,6 +72,7 @@ char			**ft_split(char const *s, char c);
 char			*ft_strchr(const char *s, int c);
 void			ft_strdel(char **str);
 char			*ft_strdup(const char *s1);
+char			*ft_strignore(char *str, char *set);
 char			*ft_strjoin(char const *s1, char const *s2);
 size_t			ft_strlcat(char *dst, const char *src, size_t dstsize);
 size_t			ft_strlcpy(char *dst, const char *src, size_t dstsize);
