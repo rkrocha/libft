@@ -6,13 +6,13 @@
 /*   By: rkochhan <rkochhan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/12 09:55:17 by rkochhan          #+#    #+#             */
-/*   Updated: 2021/03/12 10:14:30 by rkochhan         ###   ########.fr       */
+/*   Updated: 2021/04/07 10:19:51 by rkochhan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void		ft_putlnbr_base(long num, char *base, int radix)
+void	ft_putlnbr_base(long num, char *base, int radix)
 {
 	if (num < 0)
 	{
