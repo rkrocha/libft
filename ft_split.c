@@ -6,7 +6,7 @@
 /*   By: rkochhan <rkochhan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/07 11:28:24 by rkochhan          #+#    #+#             */
-/*   Updated: 2021/04/07 12:11:41 by rkochhan         ###   ########.fr       */
+/*   Updated: 2021/04/07 14:04:28 by rkochhan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,10 +84,11 @@ char	**ft_split(char const *s, char c)
 			continue ;
 		}
 		len = split_strlen(&s[i], c);
-		strs[index++] = ft_substr(&s[i], 0, len);
+		strs[index] = ft_substr(&s[i], 0, len);
 		if (!strs[index])
 			return (free_all(strs));
 		i += len;
+		index++;
 	}
 	strs[index] = NULL;
 	return (strs);
