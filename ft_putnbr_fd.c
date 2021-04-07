@@ -6,7 +6,7 @@
 /*   By: rkochhan <rkochhan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/24 13:27:11 by rkochhan          #+#    #+#             */
-/*   Updated: 2021/03/10 11:29:02 by rkochhan         ###   ########.fr       */
+/*   Updated: 2021/04/07 10:19:05 by rkochhan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	long num;
+	long	num;
 
 	num = n;
 	if (n < 0)
