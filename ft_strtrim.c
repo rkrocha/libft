@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rkochhan <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: rkochhan <rkochhan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/27 11:39:32 by rkochhan          #+#    #+#             */
-/*   Updated: 2020/02/07 12:44:19 by rkochhan         ###   ########.fr       */
+/*   Updated: 2021/04/07 10:56:57 by rkochhan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ static int	check_set(const char *set, char c)
 	return (0);
 }
 
-char		*ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(char const *s1, char const *set)
 {
 	char	*start;
 	char	*end;
@@ -33,7 +33,8 @@ char		*ft_strtrim(char const *s1, char const *set)
 	while (s1[i] && check_set(set, s1[i]))
 		i++;
 	start = (char *)&s1[i];
-	if ((i = ft_strlen(s1)) > 0)
+	i = ft_strlen(s1);
+	if (i > 0)
 		while (--i > 0 && check_set(set, s1[i]))
 			;
 	end = (char *)&s1[i];
