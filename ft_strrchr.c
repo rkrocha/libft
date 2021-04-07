@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rkochhan <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: rkochhan <rkochhan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/21 12:14:35 by rkochhan          #+#    #+#             */
-/*   Updated: 2020/02/03 13:53:22 by rkochhan         ###   ########.fr       */
+/*   Updated: 2021/04/07 10:47:23 by rkochhan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,15 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	const char *p;
+	const	char *p;
 
 	p = s;
 	while (*p)
 		p++;
 	while (*p != *s && *p != c)
 		p--;
-	return (*p == c ? (char *)p : NULL);
+	if (*p == c)
+		return ((char *)p);
+	else
+		return (NULL);
 }
