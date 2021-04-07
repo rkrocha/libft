@@ -6,23 +6,18 @@
 /*   By: rkochhan <rkochhan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/20 15:52:33 by rkochhan          #+#    #+#             */
-/*   Updated: 2021/03/14 13:49:14 by rkochhan         ###   ########.fr       */
+/*   Updated: 2021/04/07 09:34:27 by rkochhan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
+# include "libft_defines.h"
 # include <stdbool.h>
 # include <stddef.h>
 # include <stdlib.h>
 # include <unistd.h>
-
-# define BIN_BASE "01"
-# define OCTAL_BASE "01234567"
-# define DECIMAL_BASE "0123456789"
-# define LOWER_HEX_BASE "0123456789abcdef"
-# define UPPER_HEX_BASE "0123456789ABCDEF"
 
 typedef struct	s_list
 {
