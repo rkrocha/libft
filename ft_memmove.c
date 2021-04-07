@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rkochhan <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: rkochhan <rkochhan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/22 15:29:08 by rkochhan          #+#    #+#             */
-/*   Updated: 2020/02/02 15:31:09 by rkochhan         ###   ########.fr       */
+/*   Updated: 2021/04/07 11:04:50 by rkochhan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,12 +31,12 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 			d[i - 1] = s[i - 1];
 			i--;
 		}
+		return (dst);
 	}
-	else
-		while (i < len)
-		{
-			d[i] = s[i];
-			i++;
-		}
+	while (i < len)
+	{
+		d[i] = s[i];
+		i++;
+	}
 	return (dst);
 }

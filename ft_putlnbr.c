@@ -6,13 +6,13 @@
 /*   By: rkochhan <rkochhan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/10 10:48:33 by rkochhan          #+#    #+#             */
-/*   Updated: 2021/03/10 10:50:54 by rkochhan         ###   ########.fr       */
+/*   Updated: 2021/04/07 11:05:22 by rkochhan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void		ft_putlnbr(long num)
+void	ft_putlnbr(long num)
 {
 	if (num < 0)
 	{
