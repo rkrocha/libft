@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rkochhan <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: rkochhan <rkochhan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/27 15:23:07 by rkochhan          #+#    #+#             */
-/*   Updated: 2020/02/07 12:59:20 by rkochhan         ###   ########.fr       */
+/*   Updated: 2021/04/07 10:02:47 by rkochhan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ static size_t	itoa_len(long num)
 	return (len);
 }
 
-char			*ft_itoa(int n)
+char	*ft_itoa(int n)
 {
 	char	*str;
 	long	num;
@@ -36,22 +36,22 @@ char			*ft_itoa(int n)
 
 	num = n;
 	len = itoa_len(num);
-	if (!(str = malloc((len + 1) * sizeof(char))))
+	str = (char *)malloc((len + 1) * sizeof(char));
+	if (!str)
 		return (NULL);
 	str[len] = '\0';
 	i = 0;
 	if (num < 0)
 	{
-		str[i] = '-';
+		str[0] = '-';
 		num *= -1;
 		i++;
 	}
-	while ((num / 10) > 0 && len > i)
+	while (len > i)
 	{
-		str[len - 1] = (num % 10) + 48;
+		str[len - 1] = (num % 10) + '0';
 		num /= 10;
 		len--;
 	}
-	str[i] = (num % 10) + 48;
 	return (str);
 }
