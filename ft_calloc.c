@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rkochhan <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: rkochhan <rkochhan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/23 19:34:50 by rkochhan          #+#    #+#             */
-/*   Updated: 2020/02/02 14:54:34 by rkochhan         ###   ########.fr       */
+/*   Updated: 2021/04/07 10:07:56 by rkochhan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,10 @@
 
 void	*ft_calloc(size_t count, size_t size)
 {
-	void *ptr;
+	void	*ptr;
 
-	if (!(ptr = malloc(count * size)))
+	ptr = malloc(count * size);
+	if (!ptr)
 		return (NULL);
 	ft_bzero(ptr, count * size);
 	return (ptr);
