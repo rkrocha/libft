@@ -6,7 +6,7 @@
 /*   By: rkochhan <rkochhan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/21 12:14:35 by rkochhan          #+#    #+#             */
-/*   Updated: 2021/04/07 10:52:20 by rkochhan         ###   ########.fr       */
+/*   Updated: 2021/04/07 10:52:51 by rkochhan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	const	char *p;
+	const char	*p;
 
 	p = s;
 	while (*p)
