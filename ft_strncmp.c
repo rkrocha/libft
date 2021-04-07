@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rkochhan <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: rkochhan <rkochhan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/20 17:00:03 by rkochhan          #+#    #+#             */
-/*   Updated: 2020/02/01 16:50:32 by rkochhan         ###   ########.fr       */
+/*   Updated: 2021/04/07 10:06:39 by rkochhan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t				i;
 	const unsigned char	*s1cmp;
-	const unsigned char *s2cmp;
+	const unsigned char	*s2cmp;
 
 	i = 0;
 	s1cmp = (unsigned char *)s1;
