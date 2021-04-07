@@ -6,7 +6,7 @@
 /*   By: rkochhan <rkochhan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/07 11:28:24 by rkochhan          #+#    #+#             */
-/*   Updated: 2021/04/07 11:29:10 by rkochhan         ###   ########.fr       */
+/*   Updated: 2021/04/07 12:11:41 by rkochhan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,16 @@ static void	*free_all(char **strs)
 	}
 	free(strs);
 	return (NULL);
+}
+
+static size_t	split_strlen(const char *str, char c)
+{
+	size_t	len;
+
+	len = 0;
+	while (str[len] && str[len] != c)
+		len++;
+	return (len);
 }
 
 static size_t	count_strs(char const *s, char c)
@@ -47,12 +57,11 @@ static size_t	count_strs(char const *s, char c)
 	return (count);
 }
 
-static bool	alloc_array(char ***array, size_t size)
+static bool	alloc_array(char ***array, size_t str_count, size_t elem_size)
 {
-	**array = (char *)malloc(size);
-	if (!(**array))
+	*array = (char **)malloc((str_count + 1) * elem_size);
+	if (!(*array))
 		return (false);
-	*array[size] = NULL;
 	return (true);
 }
 
@@ -63,7 +72,7 @@ char	**ft_split(char const *s, char c)
 	size_t	len;
 	size_t	i;
 
-	if (!s || !alloc_array(&strs, (count_strs(s, c) + 1) * sizeof(char *)))
+	if (!s || !alloc_array(&strs, count_strs(s, c), sizeof(char *)))
 		return (NULL);
 	index = 0;
 	i = 0;
@@ -74,13 +83,12 @@ char	**ft_split(char const *s, char c)
 			i++;
 			continue ;
 		}
-		len = 0;
-		while (s[i + len] && s[i + len] != c)
-			len++;
+		len = split_strlen(&s[i], c);
 		strs[index++] = ft_substr(&s[i], 0, len);
 		if (!strs[index])
 			return (free_all(strs));
 		i += len;
 	}
+	strs[index] = NULL;
 	return (strs);
 }
