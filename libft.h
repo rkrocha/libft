@@ -6,7 +6,7 @@
 /*   By: rkochhan <rkochhan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/20 15:52:33 by rkochhan          #+#    #+#             */
-/*   Updated: 2021/04/10 09:07:32 by rkochhan         ###   ########.fr       */
+/*   Updated: 2021/04/10 09:35:24 by rkochhan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,6 +81,7 @@ int				ft_lstsize(t_list *lst);
 /*
 ** OTHERS:
 */
+float			ft_atof(const char *str);
 int				ft_isspace(int c);
 void			ft_putchar(char c);
 void			ft_putendl(char *s);

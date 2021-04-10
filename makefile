@@ -57,7 +57,8 @@ BONUS	= ft_lstadd_back.c \
 			ft_lstnew.c \
 			ft_lstsize.c
 
-OTHERS	= ft_isspace.c \
+OTHERS	= ft_atof.c \
+			ft_isspace.c \
 			ft_putchar.c \
 			ft_putendl.c \
 			ft_putlnbr.c \
@@ -69,7 +70,7 @@ OTHERS	= ft_isspace.c \
 			ft_strignore.c \
 			ft_strsearch.c \
 			ft_strswap.c \
-			ft_ullitoa_base.c
+			ft_ullitoa_base.c \
 
 OBJ		= $(SRC:.c=.o)
 
