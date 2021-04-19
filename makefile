@@ -68,6 +68,7 @@ OTHERS	= ft_atof.c \
 			ft_putstr.c \
 			ft_split_free.c \
 			ft_str_remove_blanks.c \
+			ft_str_word_count.c \
 			ft_strdel.c \
 			ft_strignore.c \
 			ft_strsearch.c \
