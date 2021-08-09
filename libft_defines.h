@@ -6,7 +6,7 @@
 /*   By: rkochhan <rkochhan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/17 22:08:55 by rkochhan          #+#    #+#             */
-/*   Updated: 2021/03/25 13:19:17 by rkochhan         ###   ########.fr       */
+/*   Updated: 2021/04/19 15:12:47 by rkochhan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 # define DECIMAL_BASE	"0123456789"
 # define LOWER_HEX_BASE	"0123456789abcdef"
 # define UPPER_HEX_BASE	"0123456789ABCDEF"
-# define WHITE_SPACES	" \f\n\r\t\v"
+# define BLANK_SPACES	" \f\n\r\t\v"
 
 typedef unsigned char	t_uchar;
 typedef unsigned int	t_uint;
