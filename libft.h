@@ -6,7 +6,7 @@
 /*   By: rkochhan <rkochhan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/20 15:52:33 by rkochhan          #+#    #+#             */
-/*   Updated: 2021/09/14 09:56:45 by rkochhan         ###   ########.fr       */
+/*   Updated: 2021/10/09 14:13:49 by rkochhan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,6 +79,7 @@ int			ft_lstsize(t_list *lst);
 /*
 ** OTHERS:
 */
+double		ft_abs(double num);
 float		ft_atof(const char *str);
 long long	ft_atoll(const char *str);
 int			ft_isspace(int c);

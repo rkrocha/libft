@@ -1,12 +1,12 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    makefile                                           :+:      :+:    :+:    #
+#    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: rkochhan <rkochhan@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/01/21 15:08:38 by rkochhan          #+#    #+#              #
-#    Updated: 2020/12/08 10:35:09 by rkochhan         ###   ########.fr        #
+#    Updated: 2021/10/09 14:13:39 by rkochhan         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -57,7 +57,8 @@ BONUS	= ft_lstadd_back.c \
 			ft_lstnew.c \
 			ft_lstsize.c
 
-OTHERS	= ft_atof.c \
+OTHERS	= ft_abs.c \
+			ft_atof.c \
 			ft_atoll.c \
 			ft_isspace.c \
 			ft_putchar.c \
