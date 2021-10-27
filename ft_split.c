@@ -6,7 +6,7 @@
 /*   By: rkochhan <rkochhan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/07 11:28:24 by rkochhan          #+#    #+#             */
-/*   Updated: 2021/04/07 14:04:28 by rkochhan         ###   ########.fr       */
+/*   Updated: 2021/10/27 08:08:14 by rkochhan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,12 +57,12 @@ static size_t	count_strs(char const *s, char c)
 	return (count);
 }
 
-static bool	alloc_array(char ***array, size_t str_count, size_t elem_size)
+static t_bool	alloc_array(char ***array, size_t str_count, size_t elem_size)
 {
 	*array = (char **)malloc((str_count + 1) * elem_size);
 	if (!(*array))
-		return (false);
-	return (true);
+		return (FALSE);
+	return (TRUE);
 }
 
 char	**ft_split(char const *s, char c)

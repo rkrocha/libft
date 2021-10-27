@@ -6,7 +6,7 @@
 /*   By: rkochhan <rkochhan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/20 15:52:33 by rkochhan          #+#    #+#             */
-/*   Updated: 2021/10/09 14:13:49 by rkochhan         ###   ########.fr       */
+/*   Updated: 2021/10/27 08:05:46 by rkochhan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define LIBFT_H
 
 # include "libft_defines.h"
-# include <stdbool.h>
 # include <stddef.h>
 # include <stdlib.h>
 # include <unistd.h>
@@ -97,6 +96,6 @@ void		ft_strdel(char **str);
 char		*ft_strignore(const char *str, const char *set);
 char		*ft_strsearch(const char *str, const char *set);
 void		ft_strswap(char **str1, char **str2);
-char		*ft_ullitoa_base(unsigned long long num, char *base, bool sign);
+char		*ft_ullitoa_base(unsigned long long num, char *base, t_bool sign);
 
 #endif

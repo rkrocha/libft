@@ -6,18 +6,18 @@
 /*   By: rkochhan <rkochhan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/13 10:14:00 by rkochhan          #+#    #+#             */
-/*   Updated: 2021/04/07 10:44:49 by rkochhan         ###   ########.fr       */
+/*   Updated: 2021/10/27 08:09:46 by rkochhan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static bool	get_radix(size_t *radix, char *base)
+static t_bool	get_radix(size_t *radix, char *base)
 {
 	*radix = ft_strlen(base);
 	if (*radix < 2)
-		return (false);
-	return (true);
+		return (FALSE);
+	return (TRUE);
 }
 
 static size_t	ullitoa_len(unsigned long long num, size_t radix)
@@ -33,7 +33,7 @@ static size_t	ullitoa_len(unsigned long long num, size_t radix)
 	return (len);
 }
 
-char	*ft_ullitoa_base(unsigned long long num, char *base, bool sign)
+char	*ft_ullitoa_base(unsigned long long num, char *base, t_bool sign)
 {
 	char	*str;
 	size_t	radix;
