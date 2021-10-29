@@ -6,7 +6,7 @@
 /*   By: rkochhan <rkochhan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/20 15:52:33 by rkochhan          #+#    #+#             */
-/*   Updated: 2021/10/27 08:05:46 by rkochhan         ###   ########.fr       */
+/*   Updated: 2021/10/29 09:37:28 by rkochhan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define LIBFT_H
 
 # include "libft_defines.h"
-# include <stddef.h>
 # include <stdlib.h>
 # include <unistd.h>
 
