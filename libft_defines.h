@@ -6,13 +6,15 @@
 /*   By: rkochhan <rkochhan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/17 22:08:55 by rkochhan          #+#    #+#             */
-/*   Updated: 2021/10/27 08:04:57 by rkochhan         ###   ########.fr       */
+/*   Updated: 2021/11/01 08:56:57 by rkochhan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_DEFINES_H
 # define LIBFT_DEFINES_H
 
+# define INT_MAX		2147483647
+# define INT_MIN		-2147483648
 # define BIN_BASE		"01"
 # define OCTAL_BASE		"01234567"
 # define DECIMAL_BASE	"0123456789"
