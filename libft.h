@@ -6,22 +6,27 @@
 /*   By: rkochhan <rkochhan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/20 15:52:33 by rkochhan          #+#    #+#             */
-/*   Updated: 2021/10/29 09:37:28 by rkochhan         ###   ########.fr       */
+/*   Updated: 2021/11/16 07:54:09 by rkochhan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include "libft_defines.h"
 # include <stdlib.h>
 # include <unistd.h>
+# include "ft_bool.h"
+# include "ft_charsets.h"
+# include "ft_limits.h"
 
 typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
 }	t_list;
+
+typedef unsigned char	t_uchar;
+typedef unsigned int	t_uint;
 
 /*
 ** MANDATORY:
