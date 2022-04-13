@@ -1,8 +1,6 @@
 <br/>
 <p align="center">
-  <a href="https://github.com/rkrocha/42cursus/blob/master/subjects/00.libft.pdf">
-    <img src="https://github.com/rkrocha/42cursus/blob/master/badges/libftm.png" alt="Logo" width="150" height="150">
-  </a>
+    <img src="https://github.com/rkrocha/42cursus/blob/main/badges/libftm.png" alt="Logo" width="150" height="150">
 
   <p align="center">
     A C library, the first assignment from 42's cursus.
@@ -16,8 +14,6 @@
 ## About The Project
 
 C programming can be very tedious when one doesn’t have access to those highly useful standard functions. This project gives you the opportunity to re-write those functions, understand them, and learn to use them. This library will help you for all your future C projects.
-
-For more information check out this project's [PDF](https://github.com/rkrocha/42cursus/blob/master/subjects/00.libft.pdf).
 
 ## Built With
 
